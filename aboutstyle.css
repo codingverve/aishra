@@ -1,0 +1,228 @@
+:root{
+    --primary-color: #d81736;
+    --font-color:  #16171c;
+    --background-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+
+header{
+      width: 100%;
+      padding: 24px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+header .logo{
+    height:38px;
+    width: 171px;
+    overflow: hidden;
+}
+.logo img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+header .nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+.nav ul li{
+    padding:0.5rem 1rem;
+    border: 1px solid white;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul a:hover{
+    color: var(--primary-color);
+}
+
+.nav ul :nth-child(3){
+    background-color: var(--primary-color);
+    color: white;
+}
+.nav ul :nth-child(3):hover{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+.nav ul :nth-child(3):hover a{
+color: var(--primary-color);
+}
+.nav ul :nth-child(3) a {
+    color: white;
+}
+.wrapper{
+    padding: 2rem 5rem;
+}
+.section1{
+    background-color: var(--primary-color);
+    display: flex;
+    color: white;
+    padding: 2.5rem;
+    justify-content: space-between;
+    align-items: start;
+}
+.section1 .rightside{
+    width: 45%;
+}
+.headings p{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.headings h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+.section1 .leftside{
+    width: 45%;
+}
+.section1 .rightside .sec1content{
+    font-size: 1.2rem;
+}
+.leftside img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section2 , .section3{
+    padding: 5rem;
+    display: flex;
+}
+
+.section2 .sec2content{
+    color: #5a5a5a;
+}
+.sec2content{
+    max-width: 600px;
+}
+.section3 .sec3content{
+    color: #5a5a5a;
+}
+.section4 {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2.5rem;
+}
+footer{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.footer-about{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+.footer-about .footer-logo{
+    height:38px;
+    width: 171px;
+    overflow: hidden;
+}
+.footer-logo img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.footer-about .footer-content {
+    font-size: 14px;
+    color: #5a5a5a;
+    line-height: 24px;
+    width: 20.5rem;
+}
+
+.quick-links .quick-heading{
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    margin-bottom: 12px;
+    color: #5a5a5a;
+}
+
+.Contact-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    gap: 30px;
+
+}
+
+.Contact-info .email-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.email-section p{
+    font-size: 14px;
+    color: #5a5a5a;
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+
+.email-section .wraper{
+    border: 1px solid #5a5a5a;
+    border-radius: 72px;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 340px;
+
+}
+
+.email-section .wraper input {
+    border: none;
+    color: #5a5a5a;
+}
+
+.email-section .wraper button{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border:none;
+    color: white;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.Extra {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Extra .info-block{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.info-block img{
+    object-fit: contain;
+}
+.info-block p {
+    color: #5a5a5a;
+    font-size: 14px ;
+}
+
+.copyright{
+    padding: 1.8rem 5rem;
+    background-color: var(--primary-color);
+    color: white;
+}

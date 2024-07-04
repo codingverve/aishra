@@ -1,0 +1,890 @@
+:root{
+    --primary-color: #d81736;
+    --font-color:  #16171c;
+    --background-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+body{
+    height: 100vh;
+}
+header{
+      width: 100%;
+      padding: 24px 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+header .logo{
+    height:38px;
+    width: 171px;
+    overflow: hidden;
+}
+.logo img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+header .nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+.nav ul li{
+    padding:0.5rem 1rem;
+    border: 1px solid white;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav ul a:hover{
+    color: var(--primary-color);
+}
+
+.nav ul :nth-child(3){
+    background-color: var(--primary-color);
+    color: white;
+}
+.nav ul :nth-child(3):hover{
+    background-color: white;
+    border: 1px solid var(--primary-color);
+}
+.nav ul :nth-child(3):hover a{
+color: var(--primary-color);
+}
+.nav ul :nth-child(3) a {
+    color: white;
+}
+.main .heroSection{
+    padding:2rem 5rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.heroSection .hero-content{
+    max-width: 60%;
+    gap: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content h1{ 
+    font-size: 4rem;
+}
+.hero-content span{
+    color: var(--primary-color);
+}
+.hero-content p{
+    max-width: 50%;
+    line-height: 170%;
+    color: 2B2F37;
+}
+.hero-content button{
+    height: 3rem;
+    width: 10rem;
+    background-color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 64px;
+    color: var(--primary-color);
+}
+.heroSection .image-caro {
+    height: 560px;
+}
+
+.image-caro img{
+    height: 100%;
+    width: 450px;;
+    object-fit: cover;
+}
+.logoSection{
+    height: 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 5rem
+}
+
+.logoSection img{
+    height: 50%;
+    object-fit: contain;
+}
+.aboutwrapper{
+    padding: 120px 80px;
+}
+.aboutusSection{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    
+}
+.aboutusSection .About-image{
+    height: 45rem;
+    width: 40rem;
+}
+
+.aboutusSection .floating{
+    line-height: 170%;
+    padding: 24px;
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    background-color: white;
+    text-align: center;
+}
+
+.aboutusSection .About-content{
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.About-content .inner-content h1 { 
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    font-weight:500;
+}
+
+.About-content .inner-content p {
+    width: 100%;
+    font-size: 1rem;
+    color: #5a5a5a;
+    line-height: 170%;
+}
+
+.aboutusSection .About-CTA button{
+    padding: 14px 28px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+.aboutusSection .About-CTA :nth-child(2){
+    background-color: white;
+    border: 1px solid #5a5a5a;
+    color: #5a5a5a;
+    margin-left: 2rem;
+}
+
+.servicesSection{
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.servicesSection .serviceHeading p{
+    letter-spacing: 3.84px;
+    margin-bottom: 0.6rem;
+}
+.servicesSection .serviceHeading h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.Services-tiles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+.tile{
+      border:1px solid #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      padding: 33px 44px;
+      width: 45%;
+      
+}
+.tile .icon {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.icon i {
+font-size: 2rem;
+color: var(--primary-color);
+}
+.tile .tile-content{
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.tile .tile-content h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.tile .tile-content p{
+    color: #5a5a5a;
+    /* width:  */
+    line-height: 170%;
+    font-size: 16px;
+}
+
+.tile .tile-CTA button {
+    background-color: white;
+    border: none;
+    font-weight: 600;
+}
+
+.tile-CTA button i {
+    color: var(--primary-color);
+}
+.why-wrapper{
+    padding: 7.5rem 5rem;
+}
+.whySection{
+    display: flex;
+    flex-direction: column;
+}
+.whySection>div{
+    display: flex;
+    padding: 2.5rem 1.8rem;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: white;
+    background-clip: padding-box;
+}
+.whySection .Why-title{
+    width: 50%;
+}
+.whySection .Why-title p{
+    letter-spacing: 3.84px;
+    margin-bottom: 0.6rem;
+}
+.whySection .Why-title h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.whySection .Why-content p{
+    font-size: 1rem;
+    line-height: 150%;
+    width: 30rem;
+    margin-bottom: 1.5rem;
+}
+.whySection .Why-content button{
+    border: 1px solid white;
+    padding: 8px 28px;
+    color: white;
+    background-color: transparent;
+}
+
+.why-images img{
+    max-height:300px;
+    width: auto;
+}
+.why-images :nth-child(2){
+    max-height:200px;
+    width: auto;
+}
+/* .whySection .why-images :nth-child(1){
+   position: relative;
+   top: -160px;
+    width: auto;
+    height: 300px;
+    display: flex;
+}
+.whySection .why-images :nth-child(2){
+   position: relative;
+    width: auto;
+    height: 280px;
+    display: flex;
+    left: -154px;
+} */
+
+.pastSection{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    gap: 5.5rem;
+}
+
+.pastSection .top-Section{
+    display: flex;
+    justify-content: space-between;
+
+}
+.pastSection .top-Section .past-headings p{
+    letter-spacing: 3.84px;
+    margin-bottom: 0.6rem;
+}
+.pastSection .top-Section .past-headings h2{
+    font-size: 2.5rem;
+    width: 30rem;
+    font-weight: 500;
+}
+.pastSection .top-Section .past-content p{
+    line-height: 170%;
+    width:35rem;
+    color: #5a5a5a;
+    margin-bottom: 1.5rem;
+}
+.pastSection .top-Section .past-content button{
+    border: 1px solid var(--primary-color);
+    padding: 8px 28px;
+    color: var(--primary-color);
+    background-color: transparent;
+}
+
+.pastSection .Project-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: space-between;
+}
+.pastSection .Project-list img{
+    width: 550px;
+    height: auto;
+}
+
+footer{
+    padding: 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.footer-about{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+}
+.footer-about .footer-logo{
+    height:38px;
+    width: 171px;
+    overflow: hidden;
+}
+.footer-logo img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.footer-about .footer-content {
+    font-size: 14px;
+    color: #5a5a5a;
+    line-height: 24px;
+    width: 20.5rem;
+}
+
+.quick-links .quick-heading{
+    font-size: 18px;
+    margin-bottom: 1.5rem;
+}
+
+.quick-links ul {
+    list-style: none;
+}
+
+.quick-links ul li {
+    margin-bottom: 12px;
+    color: #5a5a5a;
+}
+
+.Contact-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    gap: 30px;
+
+}
+
+.Contact-info .email-section h1 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+.email-section p{
+    font-size: 14px;
+    color: #5a5a5a;
+    max-width: 340px;
+    margin-bottom: 20px;
+}
+
+.email-section .wraper{
+    border: 1px solid #5a5a5a;
+    border-radius: 72px;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 340px;
+
+}
+
+.email-section .wraper input {
+    border: none;
+    color: #5a5a5a;
+}
+
+.email-section .wraper button{
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border:none;
+    color: white;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+.Extra {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Extra .info-block{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.info-block img{
+    object-fit: contain;
+}
+.info-block p {
+    color: #5a5a5a;
+    font-size: 14px ;
+}
+
+.copyright{
+    padding: 1.8rem 5rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+@media (min-width:576px) and (max-width:767.98px){
+    
+    header .nav ul{
+        list-style: none;
+        display: flex;
+        gap: 2.5rem;
+    }
+    
+    .main .heroSection{
+        padding:none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    .heroSection .hero-content{
+        max-width: 60%;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero-content h1{ 
+        font-size: 2rem;
+    }
+    .hero-content span{
+        color: var(--primary-color);
+    }
+    .hero-content p{
+        max-width:fit-content;
+        line-height: 170%;
+        color: 2B2F37;
+    }
+    .hero-content button{
+        height: 3rem;
+        width: 10rem;
+        background-color: white;
+        border: 1px solid var(--primary-color);
+        border-radius: 64px;
+        color: var(--primary-color);
+    }
+    .heroSection .image-caro {
+        height: 260px;
+    }
+    
+    .image-caro img{
+        height: 100%;
+        width: 450px;;
+        object-fit: cover;
+    }
+    .logoSection{
+        height: 9rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 5rem
+    }
+    
+    .logoSection img{
+        height: 50%;
+        object-fit: contain;
+    }
+    .aboutwrapper{
+        padding: 120px 80px;
+    }
+    .aboutusSection{
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        position: relative;
+        
+    }
+    .aboutusSection .About-image{
+        height: 45rem;
+        width: 40rem;
+    }
+    
+    .aboutusSection .floating{
+        line-height: 170%;
+        padding: 24px;
+        position: absolute;
+        top: 5%;
+        left: 45%;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .aboutusSection .About-content{
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .About-content .inner-content h1 { 
+        font-size: 2.5rem;
+        margin-bottom: 24px;
+        font-weight:500;
+    }
+    
+    .About-content .inner-content p {
+        width: 100%;
+        font-size: 1rem;
+        color: #5a5a5a;
+        line-height: 170%;
+    }
+    
+    .aboutusSection .About-CTA button{
+        padding: 14px 28px;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+    }
+    
+    .aboutusSection .About-CTA :nth-child(2){
+        background-color: white;
+        border: 1px solid #5a5a5a;
+        color: #5a5a5a;
+        margin-left: 2rem;
+    }
+    
+    .servicesSection{
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .servicesSection .serviceHeading p{
+        letter-spacing: 3.84px;
+        margin-bottom: 0.6rem;
+    }
+    .servicesSection .serviceHeading h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .Services-tiles{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-between;
+    }
+    .tile{
+          border:1px solid #f3f4f6;
+          display: flex;
+          flex-direction: column;
+          padding: 33px 44px;
+          width: 45%;
+          
+    }
+    .tile .icon {
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--primary-color);
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    
+    .icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    }
+    .tile .tile-content{
+        margin-bottom: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .tile .tile-content h3{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .tile .tile-content p{
+        color: #5a5a5a;
+        /* width:  */
+        line-height: 170%;
+        font-size: 16px;
+    }
+    
+    .tile .tile-CTA button {
+        background-color: white;
+        border: none;
+        font-weight: 600;
+    }
+    
+    .tile-CTA button i {
+        color: var(--primary-color);
+    }
+    .why-wrapper{
+        padding: 7.5rem 5rem;
+    }
+    .whySection{
+        display: flex;
+        flex-direction: column;
+    }
+    .whySection>div{
+        display: flex;
+        padding: 2.5rem 1.8rem;
+        justify-content: space-between;
+        background-color: var(--primary-color);
+        color: white;
+        background-clip: padding-box;
+    }
+    .whySection .Why-title{
+        width: 50%;
+    }
+    .whySection .Why-title p{
+        letter-spacing: 3.84px;
+        margin-bottom: 0.6rem;
+    }
+    .whySection .Why-title h2{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .whySection .Why-content p{
+        font-size: 1rem;
+        line-height: 150%;
+        width: 30rem;
+        margin-bottom: 1.5rem;
+    }
+    .whySection .Why-content button{
+        border: 1px solid white;
+        padding: 8px 28px;
+        color: white;
+        background-color: transparent;
+    }
+    
+    .why-images img{
+        max-height:300px;
+        width: auto;
+    }
+    .why-images :nth-child(2){
+        max-height:200px;
+        width: auto;
+    }
+    /* .whySection .why-images :nth-child(1){
+       position: relative;
+       top: -160px;
+        width: auto;
+        height: 300px;
+        display: flex;
+    }
+    .whySection .why-images :nth-child(2){
+       position: relative;
+        width: auto;
+        height: 280px;
+        display: flex;
+        left: -154px;
+    } */
+    
+    .pastSection{
+        display: flex;
+        flex-direction: column;
+        padding: 0 5rem;
+        gap: 5.5rem;
+    }
+    
+    .pastSection .top-Section{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .pastSection .top-Section .past-headings p{
+        letter-spacing: 3.84px;
+        margin-bottom: 0.6rem;
+    }
+    .pastSection .top-Section .past-headings h2{
+        font-size: 2.5rem;
+        width: 30rem;
+        font-weight: 500;
+    }
+    .pastSection .top-Section .past-content p{
+        line-height: 170%;
+        width:35rem;
+        color: #5a5a5a;
+        margin-bottom: 1.5rem;
+    }
+    .pastSection .top-Section .past-content button{
+        border: 1px solid var(--primary-color);
+        padding: 8px 28px;
+        color: var(--primary-color);
+        background-color: transparent;
+    }
+    
+    .pastSection .Project-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 80px;
+        justify-content: space-between;
+    }
+    .pastSection .Project-list img{
+        width: 550px;
+        height: auto;
+    }
+    
+    footer{
+        padding: 5rem;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .footer-about{
+        display: flex;
+        flex-direction:column;
+        gap:20px;
+    }
+    .footer-about .footer-logo{
+        height:38px;
+        width: 171px;
+        overflow: hidden;
+    }
+    .footer-logo img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+    }
+    
+    .footer-about .footer-content {
+        font-size: 14px;
+        color: #5a5a5a;
+        line-height: 24px;
+        width: 20.5rem;
+    }
+    
+    .quick-links .quick-heading{
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .quick-links ul {
+        list-style: none;
+    }
+    
+    .quick-links ul li {
+        margin-bottom: 12px;
+        color: #5a5a5a;
+    }
+    
+    .Contact-info{
+        display: flex;
+        flex-direction: column;
+        max-width: 340px;
+        gap: 30px;
+    
+    }
+    
+    .Contact-info .email-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    .email-section p{
+        font-size: 14px;
+        color: #5a5a5a;
+        max-width: 340px;
+        margin-bottom: 20px;
+    }
+    
+    .email-section .wraper{
+        border: 1px solid #5a5a5a;
+        border-radius: 72px;
+        display: flex;
+        padding: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 340px;
+    
+    }
+    
+    .email-section .wraper input {
+        border: none;
+        color: #5a5a5a;
+    }
+    
+    .email-section .wraper button{
+        padding: 1rem;
+        background-color: var(--primary-color);
+        border:none;
+        color: white;
+        border-radius: 999px;
+        font-size: 14px;
+    }
+    
+    .Extra {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .Extra .info-block{
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    .info-block img{
+        object-fit: contain;
+    }
+    .info-block p {
+        color: #5a5a5a;
+        font-size: 14px ;
+    }
+    
+    .copyright{
+        padding: 1.8rem 5rem;
+        background-color: var(--primary-color);
+        color: white;
+    }
+}
